@@ -1,12 +1,8 @@
 #!/usr/bin/python3
-"""
-Module 0-read_file
-Contains a function that reads a text file (UTF-8)
-doesn't specifiy permission
-"""
+"""Defines a text file-reading function."""
 
 
 def read_file(filename=""):
-    """ reads a file """
-    with open(filename, encoding='utf-8') as my_file:
-        print(my_file.read(), end="")
+    """Print the contents of a UTF8 text file to stdout."""
+    with open(filename, encoding="utf-8") as f:
+        print(f.read(), end="")
